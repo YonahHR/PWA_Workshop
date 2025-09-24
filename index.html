@@ -116,5 +116,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+    btn.addEventListener("click", () => {
+    let newColor = randomColor();
+    btn.style.backgroundColor = newColor;
+    setTimeout(() => {
+        btn.style.backgroundColor = "green"; // or your default color
+    }, 500);
+});
 </script>
 </html>  
